@@ -1,6 +1,7 @@
 FROM        perl:latest
 MAINTAINER  Dave Cross dave@perlhacks.org
 
+RUN apt-get install openssl libssl-dev libz-dev libexpat1-dev
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
 RUN cpanm Carton Starman
 
