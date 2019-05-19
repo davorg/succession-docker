@@ -11,4 +11,4 @@ RUN cd succession && carton install --deployment
 EXPOSE 1701
 
 WORKDIR succession
-CMD carton exec starman --port 8080 Succession/bin/app.psgi
+CMD carton exec starman --port 1701 Succession/bin/app.psgi
