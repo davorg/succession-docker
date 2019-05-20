@@ -1,5 +1,5 @@
-FROM        perl:latest
-MAINTAINER  Dave Cross dave@perlhacks.org
+FROM perl:latest
+LABEL maintainer="dave@perlhacks.org"
 
 RUN apt-get install openssl libssl-dev libz-dev libexpat1-dev
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
